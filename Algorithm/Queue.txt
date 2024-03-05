@@ -1,0 +1,29 @@
+Queue - ushbu data struktura navbatni hosil qilish uchun ishlatiladi.
+Queue FIFO (First Input First Output) prinsipi asosida ishlaydi,
+ya'ni birinchi kelgan mijozga birinchi xizmat ko'rsatadi.
+
+Queue konteyneridan foydalanish uchun queue modulini import qilmoq lozim.
+
+Queue methods:
+
+1. maxsize = ushbu o'zgaruvchiga navbatga qo'shilishi kerak bo'lgan itemlar soni beriladi.
+M: navbat = Queue(maxsize = 10) default 10 oladi
+
+2. put(item) - Berilgan elementni navbatning oxiridan qo'shadi
+M: navbat.put("Oqibat")
+Agar navbat uchun joy qolmagan bo'lsa kutish rejimiga o'tadi
+va ushbu rejim toki navbatda element o'chmaguncha davom etadi.
+
+3. put_nowait(item) - ushbu funksiya ham navbatga element qo'shadi lekin agar navbat to'la(full) bo'lsa xatolik qaytaradi ya'ni kutmaydi element o'chishini.
+
+4. full() - navbat elementlarining to'lganligi tekshiriladi, agar item qo'shish uchun navbatga joy mavjud bo'lmasa True aks holatda False qiymat qaytaradi.
+
+5. empty() - agar navbatda element yo'q bo'lsa True aks holatda False qiymat qaytaradi.
+
+6. get() - agar navbatda element mavjud bo'lsa ushbu elementni qaytaradi, So'ngra navbatdan shu elementni o'chiradi, aks holatda kutish rejimiga o'tadi toki navbatga element kitilguncha.
+
+7. get_nowait() - agar navbatda element bor bo'lsa qiymatni qaytarib ushbu elementni navbatdan o'chiradi, aks holatda queue._Empty()
+ERROR qaytaradi.
+
+8. qsize() - navbatning mavjud elementlarini sonini qaytaradi.
+

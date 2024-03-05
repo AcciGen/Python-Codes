@@ -1,0 +1,8 @@
+Migrato,1314716,Hungarian
+San Antonio,1488743,Georgian
+Marsabit,610923,German
+Aricagua,170362,New Zealand Sign Language
+Solina,121069,Dhivehi
+Ulanov,1343511,English
+Koubia,1386678,Swati
+NikolaTesla,571600,Polish
